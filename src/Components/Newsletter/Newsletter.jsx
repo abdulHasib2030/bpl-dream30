@@ -3,7 +3,7 @@ const Newsletter = () => {
     return (
        <div className="relative">
          <div className="border-2 absolute  w-full border-white  rounded-xl p-4  ">
-            <div className="text-center py-20 bg-white rounded-xl space-y-3 bg-[url('/assets/image/bg-shadow.png')] w-[100%]">
+            <div className="text-center py-20 bg-white rounded-xl space-y-3 bg-[url('/assets/image/bg-shadow.png')] w-full bg-cover bg-no-repeat">
                 <h1 className="text-3xl font-bold">Subscribe to our Newsletter</h1>
                 <h5 className="font-bold text-[#131313B3] text-xl">Get the latest updates and news right in your inbox!</h5>
                 <div className="w-full" >

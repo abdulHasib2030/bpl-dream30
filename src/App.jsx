@@ -17,7 +17,7 @@ function App() {
  const cliamFreeCoin = () =>{
   // console.log(6000000)
   setCoin(coin + 6000000)
-  toast.success("Added Free Coin!")
+  toast.success("Credit Added to your Account")
  }
 
   return (

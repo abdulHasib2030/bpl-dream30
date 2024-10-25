@@ -18,7 +18,7 @@ const Navbar = ({coin}) => {
                         <li>Fixture</li>
                         <li>Teams</li>
                         <li>Schedules</li>
-                        <li className='flex font-bold text-xl py-4 px-5 border-2 rounded-xl text-black '>{coin} Coin <img className='ml-2'  src={coin} alt="" /></li>
+                        <li className='flex font-bold text-xl py-4 px-5 border-2 rounded-xl text-black '>{coin} Coin <img className='ml-2'  src={coinImg} alt="" /></li>
                     </ul>
 
                     <div className="lg:hidden flex items-center">

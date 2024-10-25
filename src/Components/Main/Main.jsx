@@ -21,12 +21,12 @@ const Main = ({coin, setCoin}) => {
 
         // console.log(newSelectedPlay.biddingPrice, coin)
         if (coin < newSelectedPlay.biddingPrice) {
-            return toast.error("You can't choose player because your coin not able this player price.")
+            return toast.error("Not enough money to buy this player. Claim some Credit.")
         }
         
 
         if (selectedPlayers.length > 5){
-            return toast.error("You can't add more player.")
+            return toast.error("You can't add more than 6 player.")
         }
         for(const item of  selectedPlayers){
             if (item.playerId === newSelectedPlay.playerId){
@@ -37,13 +37,13 @@ const Main = ({coin, setCoin}) => {
 
         setSelectedPlayers((oldSelectedPlayer) => [...oldSelectedPlayer,newSelectedPlay ])
 
-        toast("Successfully selected player.")
+        toast.success(`Congrates !! ${newSelectedPlay.name} is now in your squad`)
     
     }
 
     const deleteSelectedItem = (id) =>{
         const newSelectedPlay = selectedPlayers.filter((playerId) => playerId.playerId != id)
-        console.log(newSelectedPlay)
+         toast.warning("Player removed.")
        setSelectedPlayers(newSelectedPlay)
 
     }
