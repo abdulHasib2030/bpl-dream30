@@ -7,7 +7,7 @@ const Navbar = ({coin}) => {
     const [isOpen, setisOpen] = useState(false);
 
     return (
-        <nav className=" bg-[#F9F7F3]  py-10">
+        <nav className="   py-10">
             <div className='flex justify-between  '>
                 <div>
                     <img src={logo} alt="" />
@@ -31,7 +31,7 @@ const Navbar = ({coin}) => {
                 </div>
             </div>
 
-            <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} w-full bg-[#F9F7F3]`}>
+            <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} w-full `}>
                 <ul className='flex flex-col items-center text-xl gap-7 text-[#131313B3]'>
                     <li>Home</li>
                     <li>Fixture</li>
