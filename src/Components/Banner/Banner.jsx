@@ -1,6 +1,9 @@
 import bannerMain from '../../assets/image/banner-main.png'
 import PropTypes from 'prop-types'
+
 const Banner = ({cliamFreeCoin}) => {
+  
+
     return (
         <div className="bg-[url('/assets/image/bg-shadow.png')] rounded-2xl bg-cover bg-black  bg-center w-full">
            <div className='text-center text-white space-y-4 py-9'>
